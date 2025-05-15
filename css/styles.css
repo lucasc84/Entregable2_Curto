@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background-color: #007BFF;
+  background-color: #fd1613;
   color: white;
   padding: 1rem;
   text-align: center;
@@ -41,14 +41,15 @@ input, select, button {
 }
 
 button {
-  background-color: #007BFF;
+  background-color: #fd1613;
   color: white;
   border: none;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #970D0B
+;
 }
 
 #turnos {
@@ -64,5 +65,11 @@ button:hover {
   background: #f0f0f0;
   margin-bottom: 0.5rem;
   padding: 0.5rem;
-  border-left: 5px solid #007BFF;
+  border-left: 5px solid #970D0B
+;
+}
+
+input::placeholder {
+  color: #c6c6c6; /* Cambia este valor por el color que prefieras */
+  opacity: 1;  /* Opcional: para que no sea translúcido */
 }
