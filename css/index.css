@@ -1,4 +1,3 @@
-/* styles.css */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,6 +6,7 @@ body {
   color: #333;
 }
 
+/* Estilos para el encabezado de la página */
 header {
   background-color: #fd1613;
   color: white;
@@ -14,6 +14,7 @@ header {
   text-align: center;
 }
 
+/* Contenedor principal */
 main {
   max-width: 600px;
   margin: 2rem auto;
@@ -23,6 +24,7 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos para el formulario de turnos */
 form {
   display: flex;
   flex-direction: column;
@@ -40,6 +42,7 @@ input, select, button {
   font-size: 1rem;
 }
 
+/* Botón principal */
 button {
   background-color: #fd1613;
   color: white;
@@ -48,10 +51,10 @@ button {
 }
 
 button:hover {
-  background-color: #970D0B
-;
+  background-color: #970D0B;
 }
 
+/* Sección de turnos asignados */
 #turnos {
   margin-top: 2rem;
 }
@@ -65,11 +68,11 @@ button:hover {
   background: #f0f0f0;
   margin-bottom: 0.5rem;
   padding: 0.5rem;
-  border-left: 5px solid #970D0B
-;
+  border-left: 5px solid #970D0B;
 }
 
+/* Estilo para el texto del placeholder en los inputs */
 input::placeholder {
-  color: #c6c6c6; /* Cambia este valor por el color que prefieras */
-  opacity: 1;  /* Opcional: para que no sea translúcido */
+  color: #c6c6c6;
+  opacity: 1;
 }

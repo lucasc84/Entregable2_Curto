@@ -4,21 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Entrega 2 - Lucas Curto - Simulador "Turnero de Casa de Prestamos"</title>
+  <!-- Enlace a la hoja de estilos principal -->
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
   <header>
     <h1>Entrega 2 - Lucas Curto - Simulador <br>"Turnero de Casa de Prestamos"</h1>
-                                <h2 style = "font-size:35px">Bienvenido al sistema de turnos de Préstamos Express S.A.</h2><br>
-                                <h4>Para gestionar un turno complete todos los datos y haga click en "Reservar Turno"<br><br></h4>
+    <h2 style = "font-size:35px">Bienvenido al sistema de turnos de Préstamos Express S.A.</h2><br>
+    <h4>Para gestionar un turno complete todos los datos y haga click en "Reservar Turno"<br><br></h4>
   </header>
 
   <main>
+    <!-- Formulario para solicitar un turno -->
     <form id="form-turno">
       <label for="nombre">Nombre:</label>
-<input type="text" id="nombre" required placeholder="Ingrese su Nombre y Apellido Completo">
+      <input type="text" id="nombre" required placeholder="Ingrese su nombre Completo (no se tomarán turnos sin los datos requeridos)">
+
       <label for="telefono">Teléfono:</label>
-      <input type="tel" id="telefono" required placeholder="Ingrese su Numero con código de area y sin esapcios (ej. 2214445566)">
+      <input type="tel" id="telefono" required>
 
       <label for="direccion">Dirección:</label>
       <input type="text" id="direccion" required>
@@ -29,8 +32,8 @@
       <label for="sucursal">Sucursal:</label>
       <select id="sucursal" required>
         <option value="La Plata">La Plata</option>
-        <option value="Berisso">Berisso</option>
         <option value="Ensenada">Ensenada</option>
+        <option value="Berisso">Berisso</option>
         <option value="Quilmes">Quilmes</option>
         <option value="Lanus">Lanus</option>
         <option value="Mar del Plata">Mar del Plata</option>
@@ -43,12 +46,14 @@
       <button type="submit">Solicitar Turno</button>
     </form>
 
+    <!-- Sección donde se mostrarán los turnos asignados -->
     <section id="turnos">
       <h2>Turnos asignados</h2>
       <ul id="lista-turnos"></ul>
     </section>
   </main>
 
+  <!-- Enlace al archivo principal de JavaScript -->
   <script src="js/index.js"></script>
 </body>
 </html>
