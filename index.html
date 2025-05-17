@@ -11,7 +11,7 @@
   <header>
     <h1>Entrega 2 - Lucas Curto - Simulador <br>"Turnero de Casa de Prestamos"</h1>
     <h2 style = "font-size:35px">Bienvenido al sistema de turnos de Préstamos Express S.A.</h2><br>
-    <h4>Para gestionar un turno complete todos los datos y haga click en "Reservar Turno"<br><br></h4>
+    <h3>Para gestionar un turno complete todos los datos y haga click en "Reservar Turno"<br><br></h3>
   </header>
 
   <main>
@@ -21,13 +21,13 @@
       <input type="text" id="nombre" required placeholder="Ingrese su nombre Completo (no se tomarán turnos sin los datos requeridos)">
 
       <label for="telefono">Teléfono:</label>
-      <input type="tel" id="telefono" required>
+      <input type="tel" id="telefono" required placeholder="Sólo Código de Aréa y Número (sin espacios ni guiones) Ej. 2215667788">
 
       <label for="direccion">Dirección:</label>
-      <input type="text" id="direccion" required>
+      <input type="text" id="direccion" required placeholder="Ingrese su Dirección con Nº de Portal">
 
       <label for="dni">DNI:</label>
-      <input type="text" id="dni" required>
+      <input type="text" id="dni" required placeholder="Ingrese su Nº de DNI (sin puntos ni espacios) Ej. 245657788">
 
       <label for="sucursal">Sucursal:</label>
       <select id="sucursal" required>
@@ -41,7 +41,7 @@
       </select>
 
       <label for="horario">Horario:</label>
-      <input type="time" id="horario" required>
+      <input type="time" id="horario" required placeholder="Elija el Horario deseado para su turno">
 
       <button type="submit">Solicitar Turno</button>
     </form>
